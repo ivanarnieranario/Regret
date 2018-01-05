@@ -32,8 +32,6 @@ class User extends Admin_Controller {
 		}
 
 		// disable direct create / delete Frontend User / print and export user
-		$crud->unset_add();
-		$crud->unset_delete();
 		$crud->unset_print();
 		$crud->unset_export();
 
@@ -102,7 +100,6 @@ class User extends Admin_Controller {
 	public function group()
 	{
 		$crud = $this->generate_crud('precincts');
-		$crud->unset_add();
 		$crud->unset_print();
 		$crud->unset_export();
 		$this->mPageTitle = 'Precincts';
