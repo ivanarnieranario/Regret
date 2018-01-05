@@ -3,7 +3,9 @@
 separate yung pag add ng **missing** and **found dead bodies**.
 sa mga `dropdown` dapat *dynamic* sila. Pwedeng mag add ng additional information.
 In missing eto makikita mo kapag nag add ka
---
+
+#### Missing Person 
+
 - [ ] First name
 - [ ] Middle name
 - [ ] Last name
@@ -23,7 +25,7 @@ In missing eto makikita mo kapag nag add ka
 - [ ] Haircolor(dropdown) (auto suggestion)
 - [ ] location of last seen
 
-# Dead Body
+#### Dead Body
 
 
 in found dead eto naman makikita mo kapag nag add ka
