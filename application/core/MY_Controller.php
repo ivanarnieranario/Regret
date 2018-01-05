@@ -128,7 +128,11 @@ class MY_Controller extends MX_Controller {
 				$this->mUserGroups = $this->ion_auth->get_users_groups($this->mUser->id)->result();
 
 				// TODO: get group with most permissions (instead of getting first group)
-				$this->mUserMainGroup = $this->mUserGroups[0]->name;	
+
+				//Avoid underfined
+				if(!empty($mUserGroups)){
+					$this->mUserMainGroup = $this->mUserGroups[0]->name;	
+				}
 			}
 		}
 

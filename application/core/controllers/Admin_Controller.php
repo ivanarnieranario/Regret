@@ -25,7 +25,8 @@ class Admin_Controller extends MY_Controller {
 	{
 		// load skin according to user role
 		$config = $this->mConfig['adminlte'];
-		$this->mBodyClass = $config['body_class'][$this->mUserMainGroup];
+		
+		@$this->mBodyClass = $config['body_class'][$this->$mUserMainGroup];
 
 		parent::render($view_file, $layout);
 	}
