@@ -100,6 +100,7 @@ class User extends Admin_Controller {
 	public function group()
 	{
 		$crud = $this->generate_crud('precincts');
+        $crud->unset_add();
 		$crud->unset_print();
 		$crud->unset_export();
 		$this->mPageTitle = 'Precincts';

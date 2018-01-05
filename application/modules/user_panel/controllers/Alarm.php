@@ -86,23 +86,6 @@ class Alarm extends Admin_Controller {
                 'rel_to_subj' => $rel
             ), false);
 
-            $receiver_id = $this->ion_auth->user()->row()->id;
-
-            $alarm = $this->alarm->insert(array(
-                'detail_id' => $detail_id,
-                'subject_id' => $subject_id,
-                'reportee_id' => $reportee_id,
-                'receiver_id' => $receiver_id,
-                'alarm_type_id' => $alarm_type,
-                'date_received' => date('Y-m-d H:i:s')
-            ), false);
-
-            if ($alarm) {
-                $this->system_message->set_success('Alarm Created');
-            } else {
-                $this->system_message->set_error('Error 404');
-            }
-            refresh();
         }
         $pcp = array();
         foreach ($this->precinct->get_all() as $precinct) {
