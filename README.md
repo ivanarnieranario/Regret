@@ -51,5 +51,5 @@ in found dead eto naman makikita mo kapag nag add ka
 # ADMIN PANEL
 #### USER/precints
 
-- [ ] palagay ng add and remove function.
+- [x] palagay ng add and remove function.
 - [ ] palagay na nung activity log.
