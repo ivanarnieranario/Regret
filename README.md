@@ -53,3 +53,6 @@ in found dead eto naman makikita mo kapag nag add ka
 
 - [x] palagay ng add and remove function.
 - [ ] palagay na nung activity log.
+
+# Bugs
+- [x] Logging in any panel will log in anywhere _**fixed**_
